@@ -18,7 +18,7 @@ LOCAL_PATH := $(call my-dir)
 
 ifneq ($(filter oxygen tissot,$(TARGET_DEVICE)),)
 
-include $(CLEAR_VARS)
+#include $(CLEAR_VARS)
 LOCAL_MODULE := libqdMetaData
 LOCAL_MODULE_OWNER := xiaomi
 LOCAL_SRC_FILES_64 := proprietary/lib64/libqdMetaData.so
@@ -27,9 +27,9 @@ LOCAL_MULTILIB := both
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
-include $(BUILD_PREBUILT)
+#include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
+#include $(CLEAR_VARS)
 LOCAL_MODULE := libqdutils
 LOCAL_MODULE_OWNER := xiaomi
 LOCAL_SRC_FILES_64 := proprietary/lib64/libqdutils.so
@@ -38,9 +38,9 @@ LOCAL_MULTILIB := both
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
-include $(BUILD_PREBUILT)
+#include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
+#include $(CLEAR_VARS)
 LOCAL_MODULE := libqservice
 LOCAL_MODULE_OWNER := xiaomi
 LOCAL_SRC_FILES_64 := proprietary/lib64/libqservice.so
@@ -49,7 +49,7 @@ LOCAL_MULTILIB := both
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_SUFFIX := .so
-include $(BUILD_PREBUILT)
+#include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libsdm-disp-vndapis
@@ -168,7 +168,7 @@ LOCAL_MODULE_CLASS := JAVA_LIBRARIES
 LOCAL_MODULE_SUFFIX := .jar
 include $(BUILD_PREBUILT)
 
-include $(CLEAR_VARS)
+#include $(CLEAR_VARS)
 LOCAL_MODULE := chargeonlymode
 LOCAL_MODULE_OWNER := xiaomi
 LOCAL_MODULE_PATH := $(TARGET_ROOT_OUT_SBIN)
@@ -176,6 +176,6 @@ LOCAL_UNSTRIPPED_PATH := $(TARGET_ROOT_OUT_SBIN_UNSTRIPPED)
 LOCAL_SRC_FILES := proprietary/rootfs/sbin/chargeonlymode
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := EXECUTABLES
-include $(BUILD_PREBUILT)
+#include $(BUILD_PREBUILT)
 
 endif
