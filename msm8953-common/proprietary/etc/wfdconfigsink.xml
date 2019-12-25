@@ -797,9 +797,4 @@
 
     <Cursor>0</Cursor>
 
-    <!--
-        Video Decoder Input Custom Limit Buffer Size Mode
-    -->
-    <VideoCustomSizeMode>1</VideoCustomSizeMode>
-
 </WFDConfig>
